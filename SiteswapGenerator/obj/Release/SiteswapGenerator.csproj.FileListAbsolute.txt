@@ -1,0 +1,10 @@
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Release\SiteswapGenerator.exe.config
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Release\SiteswapGenerator.exe
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Release\SiteswapGenerator.pdb
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Release\StyleCop.CSharp.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Release\StyleCop.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Release\Microsoft.Build.Utilities.v3.5.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Release\ja\Microsoft.Build.Utilities.v3.5.resources.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\obj\Release\SiteswapGenerator.csprojResolveAssemblyReference.cache
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\obj\Release\SiteswapGenerator.exe
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\obj\Release\SiteswapGenerator.pdb

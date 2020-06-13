@@ -1,0 +1,12 @@
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\SiteswapGenerator.exe.config
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\SiteswapGenerator.exe
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\SiteswapGenerator.pdb
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\StyleCop.CSharp.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\StyleCop.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\ja\Microsoft.Build.Utilities.v3.5.resources.dll
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\obj\Debug\SiteswapGenerator.csprojResolveAssemblyReference.cache
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\obj\Debug\SiteswapGenerator.exe
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\obj\Debug\SiteswapGenerator.pdb
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\SiteswapGenerator.exe.CodeAnalysisLog.xml
+c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\SiteswapGenerator.exe.lastcodeanalysissucceeded

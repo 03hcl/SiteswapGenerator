@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\bin\Debug\SiteswapGenerator.exe">
+   <Modules>
+    <Module Name="siteswapgenerator.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">'SiteswapGenerator.exe' を厳密な名前キーで署名します。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">外部から参照可能な型を公開するため、'SiteswapGenerator.exe' を CLSCompliant(true) に設定します。</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="SiteswapGenerator">
+       <Types>
+        <Type Name="Pattern" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Thrown" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Pattern.cs" Line="25">プロパティ Set アクセス操作子を削除して、'Pattern.Thrown' を読み取り専用に変更します。</Issue>
+            </Message>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Pattern.cs" Line="25">'Pattern.Thrown' がジェネリック型 'IList&lt;IList&lt;long&gt;&gt;' を入れ子にしないデザインを考慮してください。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#CountPatterns(System.Int32,System.Int32,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String,System.Object,System.Object)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="297">メソッド 'Program.CountPatterns(int, int, bool)' は、'Console.WriteLine(string, object, object)' への呼び出しのパラメーター 'format' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"({0})\t{1}通り"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CountPatternsMain()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="235">'Program.CountPatternsMain()' は、アップストリームのパブリックな、または保護された呼び出し側を含んでいません。</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="242">メソッド 'Program.CountPatternsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"n ボールのサイトスワップの総数を求めます。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="260">メソッド 'Program.CountPatternsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"もう一度実行する場合は Enter キー, 終了する場合はそれ以外を入力してください。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="246">メソッド 'Program.CountPatternsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"ボール数を入力してください。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="252">メソッド 'Program.CountPatternsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"周期を入力してください。"'</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="257">メソッド 'Program.CountPatternsMain()' は、'Console.WriteLine(string, object)' への呼び出しのパラメーター 'format' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"全 {0} 通り"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CountSiteswapsAllMain(System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="80">メソッド 'Program.CountSiteswapsAllMain(bool)' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"【 ,  ボール 】"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="112">メソッド 'Program.CountSiteswapsAllMain(bool)' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"いずれかのキーを押すと終了します。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="59">メソッド 'Program.CountSiteswapsAllMain(bool)' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"ボール数を入力してください。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="65">メソッド 'Program.CountSiteswapsAllMain(bool)' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"周期を入力してください。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="54">メソッド 'Program.CountSiteswapsAllMain(bool)' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"指定したボール、指定した周期までのサイトスワップの総数を求めます。"'</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object,System.Object,System.Object)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="103">メソッド 'Program.CountSiteswapsAllMain(bool)' は、'Console.WriteLine(string, object, object, object)' への呼び出しのパラメーター 'format' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"周期: {0} / 全 {1} 通り ({2} 通り)"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CountSiteswapsAndOutputMain()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="125">メソッド 'Program.CountSiteswapsAndOutputMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"n ボールの指定した周期までのサイトスワップの総数を求めます。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="173">メソッド 'Program.CountSiteswapsAndOutputMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"いずれかのキーを押すと終了します。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="130">メソッド 'Program.CountSiteswapsAndOutputMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"ボール数を入力してください。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="136">メソッド 'Program.CountSiteswapsAndOutputMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"周期を入力してください。"'</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object,System.Object,System.Object)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="166">メソッド 'Program.CountSiteswapsAndOutputMain()' は、'Console.WriteLine(string, object, object, object)' への呼び出しのパラメーター 'format' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"周期: {0} / 全 {1} 通り ({2} 通り)"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CountSiteswapsMain()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="181">'Program.CountSiteswapsMain()' は、アップストリームのパブリックな、または保護された呼び出し側を含んでいません。</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="186">メソッド 'Program.CountSiteswapsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"n ボールの指定した周期までのサイトスワップの総数を求めます。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="227">メソッド 'Program.CountSiteswapsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"いずれかのキーを押すと終了します。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="191">メソッド 'Program.CountSiteswapsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"ボール数を入力してください。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="197">メソッド 'Program.CountSiteswapsMain()' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"周期を入力してください。"'</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object,System.Object,System.Object)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="224">メソッド 'Program.CountSiteswapsMain()' は、'Console.WriteLine(string, object, object, object)' への呼び出しのパラメーター 'format' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"周期: {0} / 全 {1} 通り ({2} 通り)"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Main(System.String[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="21">'Program.Main(string[])' のパラメーター 'args' は使用されていません。パラメーターを削除するか、またはメソッド ボディ内で使用してください。</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-11-26 18:49:58Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="22">メソッド 'Program.Main(string[])' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"コンソール画面に途中経過を出力する場合は Y, 出力しない場合はそれ以外を入力してください。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="39">メソッド 'Program.Main(string[])' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"プログラムが実行されませんでした。"'</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator" File="Program.cs" Line="26">メソッド 'Program.Main(string[])' は、'Console.WriteLine(string)' への呼び出しのパラメーター 'value' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '"指定したボール数まで全ての場合は A, 指定したボール数のみの場合は B を入力してください。"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>アセンブリには有効な厳密な名前が必要です</Name>
+   <Description>アセンブリに厳密名がない、無効な名前が指定されている、またはコンピューターの構成により厳密名が有効ではありません。アセンブリは、この状態では配置できません。この問題の一般的な原因は次のとおりです: 1) アセンブリの内容が署名されてから変更された。2) 署名処理に失敗した。3) アセンブリが遅延署名された。4) 確認の省略を許可するレジストリ キーが、許可されるべきでない場所に存在していた。</Description>
+   <Resolution Name="NoStrongName">{0} を厳密な名前キーで署名します。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>呼び出されていないプライベート コードを使用しません</Name>
+   <Description>外部から参照可能ではない、不明なランタイム エントリ ポイントである、呼び出されていないコードがあります。この違反がエラーを発生させる場合、Visual Studio コード分析チームに問題報告を送信してください。</Description>
+   <Resolution Name="Default">{0} は、アップストリームのパブリックな、または保護された呼び出し側を含んでいません。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection プロパティは読み取り専用でなければなりません</Name>
+   <Description>ユーザーがバッキング ストアを完全に置き換えられないように、コレクションを返すプロパティは読み取り専用でなければなりません。ユーザーはコレクション内の関連のメソッドを呼び出すことによって、コレクションの内容を修正することができます。XmlSerializer クラスは、読み取り専用のコレクションのシリアル化を解除することを特別にサポートしています。詳細については XmlSerializer の概要を参照してください。</Description>
+   <Resolution Name="Default">プロパティ Set アクセス操作子を削除して、{0} を読み取り専用に変更します。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+   <Name>ジェネリック型をメンバー シグネチャ内で入れ子にしません</Name>
+   <Description>型引数として別のジェネリック型を伴うジェネリック型が、ユーザーによってインスタンス化されなければならない API を使用しないでください。構文が複雑すぎます。</Description>
+   <Resolution Name="Default">{0} がジェネリック型 {1} を入れ子にしないデザインを考慮してください。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182144.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>アセンブリに CLSCompliantAttribute を設定します</Name>
+   <Description>アセンブリは、CLSCompliant 属性を使用して、その CLS 準拠を明示しなければなりません。この属性を伴わないアセンブリは、CLS に準拠しません。アセンブリ、モジュール、および型は、部分的に CLS 準拠していないくても、CLS 準拠に設定することができます。次の規則が適用されます: 1) 要素が CLSCompliant に設定されている場合、準拠していないすべてのメンバーの CLSCompliant 属性は false に設定されていなければなりません。2) CLS 準拠していない各メンバーには、同等の CLS 準拠している代替メンバーが指定されなければなりません。</Description>
+   <Resolution Name="Default">外部から参照可能な型を公開するため、{0} を CLSCompliant(true) に設定します。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>使用されていないパラメーターの確認</Name>
+   <Description>パラメーターへのアクセス エラーが間違いなく発生していることを確認するために、メソッド本体で使用されていない非仮想メソッド内のパラメーターを調べてください。使用されていないパラメーターは、メンテナンスおよびパフォーマンスの問題を発生させます。この規則の違反は、メソッド内の実装に関するバグにポイントする可能性もあります。(例: そのパラメーターが実際はメソッド本体で使用されるべきであった等) 旧バージョンとの互換性のためにパラメーターが存在しなければならない場合、この規則の警告を無視してください。</Description>
+   <Resolution Name="Default">{1} のパラメーター {0} は使用されていません。パラメーターを削除するか、またはメソッド ボディ内で使用してください。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ローカライズされるパラメーターとしてリテラルを渡さない" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>ローカライズされるパラメーターとしてリテラルを渡さない</Name>
+   <Description>ソース コードに埋め込まれたリテラル文字列は、ローカライズするのが困難です。ローカライズされた文字列の使用が予想される環境においては、引数としてリテラル文字列を渡すことは避けてください。</Description>
+   <Resolution Name="KnownValue">メソッド {0} は、{2} への呼び出しのパラメーター '{1}' としてリテラル文字列を渡します。これを変更して、リソース テーブルから次の文字列を取得してください: '{3}'</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">カテゴリ</String>
+  <String Key="Certainty">確実性</String>
+  <String Key="CollapseAll">すべて折りたたむ</String>
+  <String Key="CheckId">ID の確認</String>
+  <String Key="Error">エラー</String>
+  <String Key="Errors">エラー</String>
+  <String Key="ExpandAll">すべて展開</String>
+  <String Key="Help">ヘルプ</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">メッセージ</String>
+  <String Key="LocationNotStoredInPdb">[場所は Pdb に格納されていません]</String>
+  <String Key="Project">プロジェクト</String>
+  <String Key="Resolution">解像度</String>
+  <String Key="Rule">ルール</String>
+  <String Key="RuleFile">規則ファイル</String>
+  <String Key="RuleDescription">規則の説明</String>
+  <String Key="Source">ソース</String>
+  <String Key="Status">状態</String>
+  <String Key="Target">ターゲット</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">コード分析レポート</String>
+ </Localized>
+</FxCopReport>

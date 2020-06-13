@@ -1,0 +1,3 @@
+<StyleCopViolations>
+  <Violation Section="Root.SiteswapGenerator.Program.CountPatternsMain" LineNumber="256" Source="c:\users\kntacooh\SkyDrive\Visual Studio 2015\Projects\SiteswapGenerator\SiteswapGenerator\Program.cs" RuleNamespace="StyleCop.CSharp.LayoutRules" Rule="CodeMustNotContainMultipleBlankLinesInARow" RuleId="SA1507">The code must not contain multiple blank lines in a row.</Violation>
+</StyleCopViolations>
